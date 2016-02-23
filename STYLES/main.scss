@@ -1,0 +1,685 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+// / COLOURS 
+//     Background- PURPLE: #CEA9FF ;
+//     Camera Flash- YELLOW: #FDF8BF ; ORANGE: #F8991D ;
+//     Derek- RED #D91F5D ; PINK #EE2E7C : Skin: #FEE5D2 ;
+//     Hansel- YELLOW HAIR: #FEE65E ; BLUE: #47C1F0 ; Darker BLUE: #3F97D3 ; Grey: #424143 ;	
+
+
+.wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+		text-align: center;
+		font-family: "Lato", sans-serif;
+		font-weight: 700;
+
+	}
+	h1 {
+		font-size: 4rem;
+		line-height: 0;
+	}
+
+	h2{
+		font-family: "PlayFair Display", serif;
+		line-height: 3rem;
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+
+	.subtitle h4 {
+		font-family: "PlayFair Display", serif;
+		font-style: italic;
+		line-height: 2rem;
+		font-size: 1.6rem;
+	}
+
+	.subtitle {
+		padding: 10px 0px;
+	}
+
+	button:focus, button:active {
+		outline: none;
+		border: 4px solid black;
+	}
+
+/*	FORM STYLES */
+	/*Default */
+	form {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	input[type=radio] {
+		display:none;
+		margin:-10%;
+	}
+	
+	input[type=radio] , label {
+		display:inline-block;
+		/*margin: -1%;*/
+		margin: -2px;
+		color: white;
+    	/*padding: 1% 4%;*/
+    	padding: 4px 0px;
+		margin-bottom: 0;
+		font-size: 2.5rem;
+		line-height: 2.5rem;
+		text-align: center;
+		text-shadow: 3px 2px 1.5px #010101;
+		vertical-align: middle;
+		z-index: 100;
+		}
+
+/*	For Derek Option*/
+	input[type=radio] + label.derek {
+		background-color: #D91F5D;
+		border: 4px solid #D91F5D;
+		background-image: url(../ASSETS/derek-head2.svg);
+		background-repeat: no-repeat;
+		background-image-size: cover;
+		background-image-position:left;
+		padding-left: 9px;
+		width: 44%;
+		}
+	
+	input[type=radio] + label.derek p, input[type=radio] + label.hansel p { 
+		padding-left: 200px;
+		padding-right: 10px;
+		text-align: left;
+	}
+	/*Hansel Option*/
+	input[type=radio] + label.hansel {
+		background-color: #47C1F0;
+		background-image: url(../ASSETS/hazel-head2.svg);
+		background-repeat: no-repeat;
+		background-image-size: contain;
+		border: 4px solid #47C1F0;
+		width: 44%;
+		}
+
+/*	For Warmup Dance Move*/
+	input[type=radio] + label.warmUpLeg {
+		background-color: #F8991D;
+		border: 4px solid #F8991D;
+		width: 28%;
+	}
+	
+	input[type=radio] + label.warmUpHead {
+		background-color: #D91F5D;
+		border: 4px solid  #D91F5D;
+		width: 28%;
+	}
+	
+	input[type=radio] + label.warmUpButt {
+		background-color: #CEA9FF;
+		border: 4px solid  #CEA9FF;
+		width: 28%;
+	}
+	
+/*	Finisher*/
+	
+	.finisherLeg {
+		background-color: #F8991D;
+		border: 4px solid #F8991D;
+		width: 28%;
+	}
+	
+	.finisherHead{
+		background-color: #D91F5D;
+		border: 4px solid #D91F5D;
+		width: 28%;
+	}
+	
+	.finisherButt{
+		background-color: #CEA9FF;
+		border: 4px solid #CEA9FF;
+		width: 28%;
+	}
+
+	/*For Signature Look*/
+	input[type=radio] + label.ferrari{
+		background-color: #D91F5D;
+		border: 4px solid #D91F5D;
+		width: 20%;
+	}
+
+	input[type=radio] + label.leTigre {
+		background-color: #F8991D;
+		border: 4px solid #F8991D;
+		width: 20%;
+	}
+
+	input[type=radio] + label.magnum {
+		background-color: #47C1F0;
+		border: 4px solid #47C1F0;
+		width: 21%;
+	}
+
+	input[type=radio] + label.blueSteel {
+		background-color: #708090;
+		border: 4px solid #708090;
+		width: 20%;
+	}
+	 
+	input[type=submit] {
+		/*background-color:#D91F5D;*/
+		background-color: black;
+		color: white;
+		text-align: center;
+		font-family: "Lato", sans-serif;
+		font-weight: 700;
+		font-size: 2.5rem;
+		border: none;
+		padding: 20px 16px;
+		margin:8% 0 10% 0;
+		width: 92%; 
+		border: 4px solid black;
+
+	}
+
+	input[type="submit"]:hover{
+	    /*border: 1px solid #999;*/
+	    background-color: #9ACD32;
+	    border: 4px solid #9ACD32;
+	    text-shadow: 3px 2px 1.5px #010101;	}
+
+	/*	hover effect on buttons*/
+	input[type=radio] + label:hover {	
+	   border: 4px solid black;
+	}
+
+	input[type=radio]:checked + label  {
+	 	background-color: black;
+	 	border: 4px solid black;
+	}
+
+	input[type=radio] {
+		display:none;
+	}
+	
+	form {
+		padding: 0;
+		margin:0;
+	}
+	
+
+section.buttons, section.viewbox {
+	float: left;
+	width: 50%;
+}
+
+section.buttons {
+	padding-top: 10%;
+}
+
+section.viewbox {
+	width: 45%;
+}
+
+button.next, button.share {
+	display: block;
+    width: 80%;
+    margin: 10% 0;
+    border-radius: 3px;
+    padding: 20px 16px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+    border: none;
+    float: right;
+    text-shadow: 3px 2px 1.5px #010101;
+ }
+        
+  button.share {
+     background-color: #D91F5D ;
+  }
+
+  button.next {
+     background-color: #9ACD32 ;
+  }
+
+// Facebook 
+.fb-like {
+	z-index: 999;
+	width: 100px;
+	height: 100px;
+	color: white;
+}
+
+.viewbox {
+		position: relative;
+		width: 75%;
+		margin: 0 auto;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+
+.noshow {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.noshowShare {
+	opacity: 0;
+}
+
+.show {
+	opacity: 1;
+}
+
+.next {
+	margin-bottom: 40px;
+}
+
+.hide {
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -5;
+}
+.reveal {
+	opacity: 1;
+	z-index: 1;
+}
+
+.dance {
+	background: rgba(0, 0, 0, 1);
+    width: 100%;
+    padding: 1% 1% 100% 3%;
+}
+
+// panel styling
+
+.derekbutt, .hanselbutt {
+    left: 33%;
+    top: 15%;
+    width: 35%;
+ }
+
+
+ .derekhead, .hanselhead{
+ 	width: 66%;
+    top: 18%;
+    left: 20%;
+ }
+
+
+.hanselhead {
+    width: 74%;
+    left: 14%;
+   }
+
+
+
+.derekleg, .hanselleg {
+    width: 46%;
+    top: 12%;
+    left: 32%;
+   }
+
+.hanselleg{
+   width: 43%;
+    top: 14%;
+}
+
+.derekwin, 
+.dereklose, 
+.hansellose, 
+.hanselwin {
+	width: 88%;
+   	display: block;
+   	top: 55%;
+    left: 10%;
+	transform: rotate(1deg);
+}
+
+.hansellose, .dereklose {
+    left: 3%;
+    width: 94%;
+}
+
+.speechBubble {
+	position: absolute;
+    top: -26%;
+    left: 75%;
+    width: 50%;
+    }
+
+
+.speechBubble h5 {
+	color: black;
+	position: absolute;
+	top: 0%;
+	left: 20%;
+	width: 60%;
+	font-size: 20px;
+}
+
+@media (max-width: 1120px)  {
+	.speechBubble h5 {
+	top: 5%;
+	width: 65%;
+	font-size: 18px;
+}
+}
+@media (max-width: 1010px)  {
+.speechBubble {
+    width: 57%;
+    }
+}
+
+@media (max-width: 883px)  {
+	.speechBubble {
+    width: 65%;
+    }
+
+	.speechBubble h5 {
+	top: 6%;
+	font-size: 16px;
+	}
+}
+
+
+
+.hanselundies, .derekundies {
+	width: 91%;
+    top: 20.5%;
+    left: 10%;
+}
+
+.hanselundies {
+	width: 93%;
+}
+
+.flash {
+	position: absolute;
+    width: 139%;
+    top: -6%;
+    left: -19%;
+    z-index: 10;
+
+}
+
+ul.looks li ul li {
+	top: 12%;
+    left: 36%;
+    width: 27%;
+}
+
+.looks h4, .end h4 {
+	font-family: serif;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: -10%;
+    left: -44%;
+    background: white;
+    border: 4px solid black;
+    text-align: center;
+}
+
+.looks h4 {
+	font-size: 42px;
+	width: 200%;
+	top: -15%;
+    left: -44%;
+}
+
+.end h4 {
+    font-size: 60px;
+    width: 90%;
+    top: -83%;
+    left: 4%;
+    transform: rotate(17deg);
+}
+
+
+// CSS ANIMATION
+@keyframes wiggle {
+  	0% {transform: translate(4px);} /*right*/
+  	100% {transform: translate(-4px);} /*left*/
+}
+
+@keyframes shake {
+  	0% {transform: translate(6px);} 
+  	100% {transform: translate(-6px);} 
+}
+
+@keyframes swing {
+	0% {	transform: rotate(15deg);
+			transform-origin: top right;
+		}
+	100% {	transform: rotate(-30deg);
+			transform-origin: top right;
+		}
+}
+
+		.move {
+			position: relative;
+		}
+		.bodyPart {
+			position: absolute;
+		}
+		.dButt, .hButt {
+			top: 43%;
+    		width: 44%;
+    		left: 24%;
+	    	animation: wiggle 120ms cubic-bezier(0.63, 0.15, 0.49, 0.93) 0s alternate infinite;
+		}
+		
+		.dLeg {
+			top: 31%;
+    		left: 15%;
+    		width: 23%;
+    		animation: swing 200ms linear 0s alternate infinite;
+		}
+
+		.hLeg {
+			top: 31%;
+    		left: 8%;
+    		width: 36%;
+    		animation: swing 200ms linear 0s alternate infinite;
+		}
+		
+		.dHead, .hHead {
+			top: -13%;
+    		left: 31%;
+    		width: 31%;
+    		-webkit-animation: shake 200ms linear 1s alternate infinite;
+    		animation: shake 200ms linear 1s alternate infinite;
+		}
+
+		.hHead {
+			top: -5%;
+    		left: 34%;
+    		width: 30%;
+    	}
+
+		.hButt {
+			top: 41%;
+		}
+		
+// MEDIA QUERIES
+		@media (max-width: 1000px){
+			input[type=radio] + label {
+				font-size: 1.6rem;
+			}
+		}
+
+
+@media (max-width: 800px) {
+
+section.viewbox {
+    width: 60%;
+}
+section.buttons {
+	width: 40%;
+	padding-right: 2%;
+}
+button.next, button.share {
+    width: 95%;
+    margin: 10% 0;
+}
+
+}
+
+
+		@media (max-width: 700px) {
+			input[type=radio] {
+				display:none;
+			}
+
+			input[type=radio] + label.derek { 
+				width: 100%;
+			}
+
+			input[type=radio] + label.hansel { 
+				width: 100%;	
+				margin-top: 5px;
+			}
+			input[type=radio] + label.warmUpLeg {
+				width: 100%;	
+				margin-top: 5px;
+			}
+			
+			input[type=radio] + label.warmUpButt {
+				width: 100%;	
+				margin-top: 5px;
+			}
+
+			input[type=radio] + label.warmUpHead {
+				width: 100%;	
+				margin-top: 5px;
+			}
+
+			input[type=radio] + label.ferrari{ 
+				width: 100%;	
+				margin-top: 5px;
+			}
+			
+
+			input[type=radio] + label.leTigre {
+				width: 100%;	
+				margin-top: 5px;
+			}
+
+			input[type=radio] + label.magnum {
+				width: 100%;	
+				margin-top: 5px;
+			}
+
+			input[type=radio] + label.blueSteel {
+				width: 100%;	
+				margin-top: 5px;
+			}
+
+			.finisherLeg, .finisherButt, .finisherHead {
+				width: 100%;	
+				margin-top: 5px;
+			}
+
+			input[type=submit] {
+				width: 100%
+			}
+
+
+	}
+		
+	
+@media (max-width: 695px)  {
+section.buttons, section.viewbox {
+    float: none;
+}
+section.buttons {
+	width: 80%;
+	padding-top: 0%;
+}
+section.viewbox {
+	width: 68%;
+
+}
+.dance {
+	padding: 1% 0% 100% 0%;
+}
+button.next {
+    margin: 0;
+    padding: 7px 0px;
+    width: 74%;
+    }
+    
+.speechBubble {
+    top: -28%;
+    left: 71%;
+    width: 50%;
+   }
+
+}
+
+@media (max-width: 570px)  {
+	.speechBubble h5 {
+    	top: 6%;
+    	font-size: 13px;
+    }
+
+}
+
+@media (max-width: 465px)  {
+	.speechBubble h5 {
+    	font-size: 13px;
+    	width: 75%;
+    	left: 13%;
+    	top: 3%;
+    }
+
+    .speechBubble {
+    	top: -28%;
+    	left: 63%;
+    	width: 40%;
+   }
+
+   section.viewbox {
+    width: 95%;
+}
+
+}
+
+@media (max-width: 380px)  {
+	  section.viewbox {
+   		 width: 100%;
+		}
+
+	.speechBubble h5 {
+    	font-size: 12px;
+    	top: -1%;
+
+    }
+
+    .speechBubble {
+
+   }
+
+}

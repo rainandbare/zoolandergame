@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> CSS Animations Trial </title>
+</head>
+<body>
+
+
+<div class="wrapper">	
+<section class="trialImages">
+	<div class="derek_butt">
+		<img class="butt_body" src="../ASSETS/derek-butt-body.svg" alt="">
+		<img class="butt" src="../ASSETS/derek-butt.svg">
+	</div>
+
+
+</section>
+
+
+
+
+<section class="trialShapes">
+	<div class="part bum"></div>
+	<div class="part head"></div>
+	<div class="part leg">
+		<div class="legTop"></div>
+		<div class="legBottom"></div>
+	</div>
+</section>
+</div>
+
+<style>
+	
+	.wrapper {
+		width: 800px;
+		margin: 0 auto;
+	}
+
+/*@keyframes wiggle {
+  0%  {left: 153px; }
+  29% {left: calc(153px - 6px);}
+  36% {left: 6px;}
+  42% {left: -7px;}
+  49% {left: 7px;}
+  56% {left: -8px;}
+  63% {left: 8px;}
+  70% {left: -9px;}
+  77% {left: 9px;}
+  84% {left: -10px;}
+  91% {left: 10px;}
+  100% {left:0px;}
+}*/
+
+@keyframes wiggle {
+	0% {left: 153px;
+
+	}
+	100% {left: 160px;
+
+	}
+}
+
+
+/*@keyframes hump {
+	0% {transform: scale(1);}
+	100% {transform: scale(0.8);}
+}*/
+
+.derek_butt {
+	position: relative;
+}
+
+.butt {
+	position: absolute;
+	top: 320px;
+    left: 153px;
+	animation: wiggle 200ms cubic-bezier(0.63, 0.15, 0.49, 0.93),
+		 	   hump 250ms ease-out 2.5s alternate 4;
+}
+
+/*
+
+@keyframes wiggle {
+  0% { left: 0px; }
+/*  7% {left: 50px;}
+  14% {left: -50px;}
+  21% {left: 50px;}*/
+ /* 29% {left: -60px;}
+  36% {left: 60px;}
+  42% {left: -70px;}
+  49% {left: 70px;}
+  56% {left: -80px;}
+  63% {left: 80px;}
+  70% {left: -90px;}
+  77% {left: 90px;}
+  84% {left: -100px;}
+  91% {left: 100px;}
+  100% {left:0px;}*/
+/*}*/*/
+
+@keyframes hump {
+	0% {transform: scale(1);}
+	100% {transform: scale(0.8);}
+}
+
+
+	.bum {
+		 width: 200px;
+		 height: 200px;
+		 background: red;
+		 margin: 0 400px;
+		 border-radius: 40%;
+		 animation: wiggle 2.5s cubic-bezier(0.63, 0.15, 0.49, 0.93),
+		 			hump 250ms ease-out 2.5s alternate 4;
+		 position: relative;
+	}
+	.bum::after {
+		 content: '';
+		 width: 200px;
+		 height: 200px;
+		 background: red;
+		 border-radius: 40%;
+		 position: absolute;
+		 left: -160px;
+		 display: block;
+	}
+
+
+
+
+
+
+
+@keyframes shake {
+ 0%  { 	transform:rotate(-15deg);
+ 		left: 100px;
+ 	}
+ 100% {	transform:rotate(15deg);
+ 		left: -100px;
+ 	}
+}
+
+	.head {
+		 width: 150px;
+		 height: 300px;
+		 border-radius: 50%;
+		 background: blue;
+		 margin: 0 auto;
+		 position: relative;
+		 transform-origin: bottom center;
+		 animation-name: shake; 
+		 animation-duration: 200ms;
+		 animation-iteration-count: 10;
+		 animation-direction: alternate;
+	}
+
+
+
+
+
+@keyframes swing {
+ 0%  { 	transform:rotate(-30deg);
+ 		
+ 	}
+ 100% {	transform:rotate(30deg);
+ 	
+ 	}
+}
+
+
+	.leg {
+		 width: 50px;
+		 height: 200px;
+		 background: purple;
+		 margin: 0 auto;
+		 position: relative;
+		 transform-origin: top center;
+		 animation-name: swing; 
+		 animation-duration: 100ms;
+		 animation-iteration-count: 10;
+		 animation-direction: alternate;
+	}
+	.leg::after {
+		content: '';
+    	width: 80px;
+    	height: 50px;
+    	border-radius: 40%;
+    	background: black;
+ 	   	display: block;
+    	position: absolute;
+    	bottom: -11px;
+    	left: -15px;
+	}
+
+	.legTop {
+		
+	}
+
+	.part {
+		margin-top: 200px;
+		margin-bottom: 200px;
+	}
+
+
+</style>
+
+</body>
+</html>

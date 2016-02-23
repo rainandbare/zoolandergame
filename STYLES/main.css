@@ -1,0 +1,1108 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  min-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 0;
+}
+
+h2 {
+  font-family: "PlayFair Display", serif;
+  line-height: 3rem;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D91F5D;
+}
+
+.subtitle h4 {
+  font-family: "PlayFair Display", serif;
+  font-style: italic;
+  line-height: 1;
+  font-size: 1.2rem;
+  margin: 5px;
+}
+
+.subtitle {
+  padding: 4px 0px;
+}
+
+button:focus, button:active {
+  outline: none;
+  border: 4px solid black;
+}
+
+/*	FORM STYLES */
+/*Default */
+form {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type=radio] {
+  display: none;
+  margin: -10%;
+}
+
+input[type=radio], label {
+  display: inline-block;
+  /*margin: -1%;*/
+  margin: -2px;
+  color: white;
+  /*padding: 1% 4%;*/
+  padding: 4px 0px;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  text-shadow: 3px 2px 1.5px #010101;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+/*	For Derek Option*/
+input[type=radio] + label.derek {
+  background-color: #D91F5D;
+  border: 4px solid #D91F5D;
+  background-image: url(../ASSETS/derek-head2.svg);
+  background-repeat: no-repeat;
+  background-image-size: cover;
+  background-image-position: left;
+  padding-left: 9px;
+  width: 44%;
+}
+
+input[type=radio] + label.derek p, input[type=radio] + label.hansel p {
+  padding-left: 200px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+/*Hansel Option*/
+input[type=radio] + label.hansel {
+  background-color: #47C1F0;
+  background-image: url(../ASSETS/hazel-head2.svg);
+  background-repeat: no-repeat;
+  background-image-size: contain;
+  border: 4px solid #47C1F0;
+  width: 44%;
+}
+
+/*	For Warmup Dance Move*/
+input[type=radio] + label.warmUpLeg {
+  background-color: #F8991D;
+  border: 4px solid #F8991D;
+  width: 28%;
+}
+
+input[type=radio] + label.warmUpHead {
+  background-color: #D91F5D;
+  border: 4px solid  #D91F5D;
+  width: 28%;
+}
+
+input[type=radio] + label.warmUpButt {
+  background-color: #CEA9FF;
+  border: 4px solid  #CEA9FF;
+  width: 28%;
+}
+
+/*	Finisher*/
+.finisherLeg {
+  background-color: #F8991D;
+  border: 4px solid #F8991D;
+  width: 28%;
+}
+
+.finisherHead {
+  background-color: #D91F5D;
+  border: 4px solid #D91F5D;
+  width: 28%;
+}
+
+.finisherButt {
+  background-color: #CEA9FF;
+  border: 4px solid #CEA9FF;
+  width: 28%;
+}
+
+/*For Signature Look*/
+input[type=radio] + label.ferrari {
+  background-color: #D91F5D;
+  border: 4px solid #D91F5D;
+  width: 20%;
+}
+
+input[type=radio] + label.leTigre {
+  background-color: #F8991D;
+  border: 4px solid #F8991D;
+  width: 20%;
+}
+
+input[type=radio] + label.magnum {
+  background-color: #47C1F0;
+  border: 4px solid #47C1F0;
+  width: 21%;
+}
+
+input[type=radio] + label.blueSteel {
+  background-color: #708090;
+  border: 4px solid #708090;
+  width: 20%;
+}
+
+input[type=submit] {
+  /*background-color:#D91F5D;*/
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  border: none;
+  padding: 20px 16px;
+  margin: 8% 0 10% 0;
+  width: 92%;
+  border: 4px solid black;
+}
+
+input[type="submit"]:hover {
+  /*border: 1px solid #999;*/
+  background-color: #9ACD32;
+  border: 4px solid #9ACD32;
+  text-shadow: 3px 2px 1.5px #010101;
+}
+
+/*	hover effect on buttons*/
+input[type=radio] + label:hover {
+  border: 4px solid black;
+}
+
+input[type=radio]:checked + label {
+  background-color: black;
+  border: 4px solid black;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+form {
+  padding: 0;
+  margin: 0;
+}
+
+section.buttons, section.viewbox {
+  float: left;
+  width: 50%;
+}
+
+section.buttons {
+  padding-top: 10%;
+  position:  relative;
+  z-index: 9999;
+}
+
+section.viewbox {
+  width: 45%;
+}
+
+button.next, button.share {
+  display: block;
+  width: 80%;
+  margin: 10% 0;
+  border-radius: 3px;
+  padding: 20px 16px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  font-size: 2.5rem;
+  border: none;
+  float: right;
+  text-shadow: 3px 2px 1.5px #010101;
+}
+
+button.share {
+  background-color: #D91F5D;
+}
+
+.fb-share-button {
+  top:-12px;
+  position: relative;
+}
+
+footer p {
+  text-align: center;
+  color: grey;
+  font-size: 0.4rem;
+}
+
+button.next {
+  background-color: #9ACD32;
+}
+
+.viewbox {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.noshow {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.noshowShare {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.next {
+  margin-bottom: 40px;
+}
+
+.hide {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+
+.reveal {
+  opacity: 1;
+  z-index: 1;
+}
+
+.dance {
+  background: black;
+  width: 100%;
+  padding: 1% 1% 100% 3%;
+}
+
+.derekbutt, .hanselbutt {
+  left: 33%;
+  top: 15%;
+  width: 35%;
+}
+
+.derekhead, .hanselhead {
+  width: 66%;
+  top: 18%;
+  left: 20%;
+}
+
+.hanselhead {
+  width: 74%;
+  left: 14%;
+}
+
+.derekleg, .hanselleg {
+  width: 46%;
+  top: 12%;
+  left: 32%;
+}
+
+.hanselleg {
+  width: 43%;
+  top: 14%;
+}
+
+.derekwin,
+.dereklose,
+.hansellose,
+.hanselwin {
+  width: 88%;
+  display: block;
+  top: 55%;
+  left: 10%;
+  -webkit-transform: rotate(1deg);
+      -ms-transform: rotate(1deg);
+          transform: rotate(1deg);
+}
+
+.hansellose, .dereklose {
+  left: 3%;
+  width: 94%;
+}
+
+.speechBubble {
+  position: absolute;
+  top: -26%;
+  left: 75%;
+  width: 50%;
+}
+
+.speechBubble h5 {
+  color: black;
+  position: absolute;
+  top: 0%;
+  left: 11%;
+  width: 70%;
+  font-size: 20px;
+}
+
+.endBubble h5 {
+  width: 60%;
+  top: 4%;
+  left: 18%;
+}
+
+@media (max-width: 1120px) {
+  .speechBubble h5 {
+    top: 5%;
+    width: 65%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .speechBubble {
+    width: 57%;
+  }
+}
+
+@media (max-width: 883px) {
+  .speechBubble {
+    width: 65%;
+  }
+  .speechBubble h5 {
+    top: 6%;
+    font-size: 16px;
+  }
+}
+
+.hanselundies, .derekundies {
+  width: 91%;
+  top: 20.5%;
+  left: 10%;
+}
+
+.hanselundies {
+  width: 93%;
+}
+
+.flash {
+  position: absolute;
+  width: 139%;
+  top: -6%;
+  left: -19%;
+  z-index: 10;
+}
+
+ul.looks li ul li {
+  top: 12%;
+  left: 36%;
+  width: 27%;
+}
+
+.looks h4, .end h4 {
+  font-family: serif;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: -10%;
+  left: -44%;
+  background: white;
+  border: 4px solid black;
+  text-align: center;
+}
+
+.looks h4 {
+  font-size: 42px;
+  width: 200%;
+  top: -15%;
+  left: -44%;
+}
+
+.end h4 {
+  font-size: 60px;
+  width: 90%;
+  top: -83%;
+  left: 4%;
+  -webkit-transform: rotate(17deg);
+      -ms-transform: rotate(17deg);
+          transform: rotate(17deg);
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(4px);
+            transform: translate(4px);
+  }
+  /*right*/
+  100% {
+    -webkit-transform: translate(-4px);
+            transform: translate(-4px);
+  }
+  /*left*/
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(4px);
+            transform: translate(4px);
+  }
+  /*right*/
+  100% {
+    -webkit-transform: translate(-4px);
+            transform: translate(-4px);
+  }
+  /*left*/
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(6px);
+            transform: translate(6px);
+  }
+  100% {
+    -webkit-transform: translate(-6px);
+            transform: translate(-6px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(6px);
+            transform: translate(6px);
+  }
+  100% {
+    -webkit-transform: translate(-6px);
+            transform: translate(-6px);
+  }
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+    -webkit-transform-origin: top right;
+            transform-origin: top right;
+  }
+  100% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    -webkit-transform-origin: top right;
+            transform-origin: top right;
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+    -webkit-transform-origin: top right;
+            transform-origin: top right;
+  }
+  100% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    -webkit-transform-origin: top right;
+            transform-origin: top right;
+  }
+}
+
+@-webkit-keyframes grab {
+  0% {
+    -webkit-transform: rotate(129deg) translateY(10%);
+            transform: rotate(129deg) translateY(10%);
+  }
+  100% {
+    -webkit-transform: rotate(129deg) translateY(-10%);
+            transform: rotate(129deg) translateY(-10%);
+  }
+}
+
+@keyframes grab {
+  0% {
+    -webkit-transform: rotate(129deg) translateY(10%);
+            transform: rotate(129deg) translateY(10%);
+  }
+  100% {
+    -webkit-transform: rotate(129deg) translateY(-10%);
+            transform: rotate(129deg) translateY(-10%);
+  }
+}
+
+@-webkit-keyframes glowLeft {
+  0% {
+    -webkit-transform: rotate(246deg) translateX(10%);
+            transform: rotate(246deg) translateX(10%);
+  }
+  100% {
+    -webkit-transform: rotate(246deg) translateX(-10%);
+            transform: rotate(246deg) translateX(-10%);
+  }
+}
+
+@keyframes glowLeft {
+  0% {
+    -webkit-transform: rotate(246deg) translateY(10%);
+            transform: rotate(246deg) translateY(10%);
+  }
+  100% {
+    -webkit-transform: rotate(246deg) translateY(-10%);
+            transform: rotate(246deg) translateY(-10%);
+  }
+}
+
+@-webkit-keyframes glowRight {
+  0% {
+    -webkit-transform: rotate(65deg) translateY(10%);
+            transform: rotate(65deg) translateY(10%);
+  }
+  100% {
+    -webkit-transform: rotate(65deg) translateY(-10%);
+            transform: rotate(65deg) translateY(-10%);
+  }
+}
+
+@keyframes glowRight {
+  0% {
+    -webkit-transform: rotate(65deg) translateY(10%);
+            transform: rotate(65deg) translateY(10%);
+  }
+  100% {
+    -webkit-transform: rotate(65deg) translateY(-10%);
+            transform: rotate(65deg) translateY(-10%);
+  }
+}
+
+.pocketLine, .pocketLineDerek {
+  width: 13%;
+  top: 74%;
+  left: 66%;
+  position: absolute;
+  -webkit-transform: rotate(129deg) translateY(0px);
+      -ms-transform: rotate(129deg) translateY(0px);
+          transform: rotate(129deg) translateY(0px);
+  -webkit-animation: grab 200ms linear 1s alternate infinite;
+          animation: grab 200ms linear 1s alternate infinite;
+}
+
+.pocketLineDerek {
+  top: 77%;
+  left: 64%;
+}
+
+.lookLineLeft, .lookLineRight {
+    width: 32%;
+    top: 6%;
+    left: -10%;
+    position: absolute;
+    -webkit-transform: rotate(246deg) translateX(0px);
+        -ms-transform: rotate(246deg) translateX(0px);
+            transform: rotate(246deg) translateX(0px);
+   
+}
+
+.lookLineLeft {
+ -webkit-animation: glowLeft 200ms linear 1s alternate infinite;
+         animation: glowLeft 200ms linear 1s alternate infinite;
+
+}
+.lookLineRight {
+      left: 70%;
+      top: 7%;
+      -webkit-transform: rotate(65deg) translateX(0px);
+          -ms-transform: rotate(65deg) translateX(0px);
+              transform: rotate(65deg) translateX(0px);
+      -webkit-animation: glowRight 200ms linear 1s alternate infinite;
+              animation: glowRight 200ms linear 1s alternate infinite;
+
+}
+
+.move {
+  position: relative;
+}
+
+.bodyPart {
+  position: absolute;
+}
+
+.dButt, .hButt {
+  top: 43%;
+  width: 44%;
+  left: 24%;
+  -webkit-animation: wiggle 120ms cubic-bezier(0.63, 0.15, 0.49, 0.93) 0s alternate infinite;
+          animation: wiggle 120ms cubic-bezier(0.63, 0.15, 0.49, 0.93) 0s alternate infinite;
+}
+
+.dLeg {
+  top: 31%;
+  left: 15%;
+  width: 23%;
+  -webkit-animation: swing 200ms linear 0s alternate infinite;
+          animation: swing 200ms linear 0s alternate infinite;
+}
+
+.hLeg {
+  top: 31%;
+  left: 8%;
+  width: 36%;
+  -webkit-animation: swing 200ms linear 0s alternate infinite;
+          animation: swing 200ms linear 0s alternate infinite;
+}
+
+.dHead, .hHead {
+  top: -15%;
+  left: 31%;
+  width: 31%;
+  -webkit-animation: shake 200ms linear 1s alternate infinite;
+  animation: shake 200ms linear 1s alternate infinite;
+}
+
+.hHead {
+  top: -5%;
+  left: 34%;
+  width: 30%;
+}
+
+.hButt {
+  top: 41%;
+}
+
+@media (max-width: 1000px) {
+  input[type=radio] + label {
+    font-size: 1.6rem;
+  }
+   .speechBubble h5 {
+    width: 75%;
+  }
+
+  .endBubble h5 {
+  top: 0%;
+  left: 11%;
+  }
+}
+
+@media (max-width: 900px) {
+  section.viewbox {
+    width: 60%;
+  }
+  section.buttons {
+    width: 40%;
+    padding-right: 2%;
+  }
+  button.next, button.share {
+    width: 96%;
+    margin: 56% 0;
+  }
+
+  button.share {
+      margin: -52% 0;
+  }
+
+  .speechBubble h5 {
+    top: 8%;
+    font-size: 1.4rem;
+    width: 70%;
+  }
+  .endBubble {
+    top: -123%;
+    width: 58%;
+  }
+}
+
+@media (max-width: 865px) {
+.speechBubble h5 {
+    top: 1%;
+    font-size: 1.4rem;
+    width: 77%;
+
+  }
+}
+
+
+
+@media (max-width: 780px){
+  .looks h4 {
+    font-size: 38px;
+    width: 300%;
+    left: -98%;
+  }
+ button.next {
+    margin: 45% 0 56%;
+  }
+     
+}
+
+@media (max-width: 700px) {
+  input[type=radio] {
+    display: none;
+  }
+  input[type=radio] + label.derek {
+    width: 100%;
+  }
+  input[type=radio] + label.hansel {
+    width: 100%;
+    margin-top: 5px;
+  }
+  input[type=radio] + label.warmUpLeg {
+    width: 100%;
+    margin-top: 5px;
+  }
+  input[type=radio] + label.warmUpButt {
+    width: 100%;
+    margin-top: 5px;
+  }
+  input[type=radio] + label.warmUpHead {
+    width: 100%;
+    margin-top: 5px;
+  }
+  input[type=radio] + label.ferrari {
+    width: 100%;
+    margin-top: 5px;
+  }
+  input[type=radio] + label.leTigre {
+    width: 100%;
+    margin-top: 5px;
+  }
+  input[type=radio] + label.magnum {
+    width: 100%;
+    margin-top: 5px;
+  }
+  input[type=radio] + label.blueSteel {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .finisherLeg, .finisherButt, .finisherHead {
+    width: 100%;
+    margin-top: 5px;
+  }
+  input[type=submit] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 695px) {
+  section.buttons, section.viewbox {
+    float: none;
+  }
+  section.buttons {
+    width: 80%;
+    padding-top: 0%;
+    margin-top: -3%;
+  }
+  section.viewbox {
+    width: 60%;
+    margin-top: -2%;
+  }
+  .dance {
+    padding: 1% 0% 100% 0%;
+  }
+
+  button.next, button.share {
+    width: 74%;
+    margin: 1% 0;
+    font-size: 1.8rem; 
+    padding: 10px;
+
+  }
+  .speechBubble {
+    top: -28%;
+    left: 71%;
+    width: 50%;
+  }
+
+ .speechBubble h5 {
+    font-size: 1rem;
+      top: 0%;
+  }
+}
+
+
+@media (max-width: 570px) {
+
+  section.viewbox {
+    width: 85%;
+  }
+  .speechBubble {
+    top: -26%;
+    left: 61%;
+    width: 50%;
+  }
+  .speechBubble h5 {
+    left: 13%;
+    top: 3%;
+  }
+
+  .endBubble h5 {
+    top: 10%;
+    width: 72%;
+  }
+
+    .endBubble {
+    top: -19%;
+    left: 61%;
+    width: 46%;
+  }
+
+  ul.end h4 {
+    top: -93%;
+    left: 4%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .speechBubble {
+    top: -29%;
+    left: 57%;
+    width: 43%;
+  }
+
+  section.viewbox {
+    width: 100%;
+  }
+
+  button.next, button.share { 
+    width: 97%;
+    font-size: 1.8rem;
+    padding: 3px 0px;
+    margin-top: -4%;
+  }
+
+button.share {
+  margin-top: 0%;
+}
+
+section.buttons {
+    width: 99%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 460px) {
+  ul.end h4 {
+    top: -86%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 395px) {
+  section.viewbox {
+    width: 100%;
+  }
+  .speechBubble h5 {
+    font-size: 1rem;
+    top: -2%;
+  }
+  .speechBubble {
+    top: -29%;
+    left: 52%;
+    width: 51%;
+  }
+
+  .endBubble h5 {
+      top: 4%;
+  }
+
+  ul.end h4 {
+    top: -100%;
+    left: -2%;
+}
+}
+
+/*# sourceMappingURL=main.css.map */

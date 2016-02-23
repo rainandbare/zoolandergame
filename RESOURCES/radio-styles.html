@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Zoolander Walk-Off</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300|Playfair+Display' rel='stylesheet' type='text/css'>
+
+
+	<style>
+
+	.wrapper {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		text-align: center;
+		font-family: "Lato", sans-serif;
+		font-weight: 700;
+
+	}
+	
+	h1 {
+		font-size: 4rem;
+	}
+
+	h2 {
+		font-family: "PlayFair Display", serif;
+		line-height: 3rem;
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+
+/*	FORM STYLES */
+	/*Default */
+	form {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	input[type=radio] {
+		display:none;
+		margin:-10%;
+	}
+	
+	input[type=radio] , label {
+		display:inline-block;
+		/*margin: -1%;*/
+		margin: -9px;
+		color: white;
+    	/*padding: 1% 4%;*/
+    	padding: 4px 16px;
+		margin-bottom: 0;
+		font-size: 2.5rem;
+		line-height: 2.5rem;
+		text-align: center;
+		text-shadow: 1px 0.5px 0.5px rgba(1,1,1,1);
+		vertical-align: middle;
+		z-index: 100;
+		}
+
+/*	For Derek Option*/
+	input[type=radio] + label.derek {
+		background-color: #D91F5D;
+		border: 4px solid #D91F5D;
+		background-image: url(ASSETS/derek-head2.svg);
+		background-repeat: no-repeat;
+		background-image-size: cover;
+		background-image-position:left;
+		padding-left: 9px;
+		width: 44%;
+		}
+	
+	input[type=radio] + label.derek p, input[type=radio] + label.hansel p { 
+		padding-left: 200px;
+		padding-right: 10px;
+		text-align: left;
+	}
+	/*Hansel Option*/
+	input[type=radio] + label.hansel {
+		background-color: #47C1F0;
+		background-image: url(ASSETS/hazel-head2.svg);
+		background-repeat: no-repeat;
+		background-image-size: contain;
+		border: 4px solid #47C1F0;
+		width: 44%;
+		}
+
+/*	For Warmup Dance Move*/
+	input[type=radio] + label.warmUpLeg {
+		background-color: #F8991D;
+		border: 4px solid #F8991D;
+		width: 28%;
+	}
+	
+	input[type=radio] + label.warmUpHead {
+		background-color: #D91F5D;
+		border: 4px solid  #D91F5D;
+		width: 28%;
+	}
+	
+	input[type=radio] + label.warmUpButt {
+		background-color: #CEA9FF;
+		border: 4px solid  #CEA9FF;
+		width: 28%;
+	}
+	
+/*	Finisher*/
+	
+	.finisherLeg {
+		background-color: #F8991D;
+		border: 4px solid #F8991D;
+		width: 28%;
+	}
+	
+	.finisherHead{
+		background-color: #D91F5D;
+		border: 4px solid #D91F5D;
+		width: 28%;
+	}
+	
+	.finisherButt{
+		background-color: #CEA9FF;
+		border: 4px solid #CEA9FF;
+		width: 28%;
+	}
+
+	/*For Signature Look*/
+	input[type=radio] + label.ferrari{
+		background-color: #D91F5D;
+		border: 4px solid #D91F5D;
+		width: 20%;
+	}
+
+	input[type=radio] + label.leTigre {
+		background-color: #F8991D;
+		border: 4px solid #F8991D;
+		width: 20%;
+	}
+
+	input[type=radio] + label.magnum {
+		background-color: #47C1F0;
+		border: 4px solid #47C1F0;
+		width: 21%;
+	}
+
+	input[type=radio] + label.blueSteel {
+		background-color: #708090;
+		border: 4px solid #708090;
+		width: 20%;
+	}
+	 
+	input[type=submit] {
+		/*background-color:#D91F5D;*/
+		background-color: black;
+		color: white;
+		text-align: center;
+		font-family: "Lato", sans-serif;
+		font-weight: 700;
+		font-size: 2.5rem;
+		border: none;
+		padding: 20px 16px;
+		margin:8% 0 10% 0;
+		width: 92%; 
+		border: 4px solid black;
+
+	}
+
+	input[type="submit"]:hover{
+	    /*border: 1px solid #999;*/
+	    background-color: #9ACD32;
+	    border: 4px solid #9ACD32;
+	    text-shadow: 1px 0.5px 0.5px rgba(1,1,1,1);
+	}
+
+	/*	hover effect on buttons*/
+	input[type=radio] + label:hover {	
+	   border: 4px solid black;
+	}
+
+	input[type=radio]:checked + label  {
+	 	background-color: black;
+	 	border: 4px solid black;
+	}
+
+	input[type=radio] {
+		display:none;
+	}
+	
+	form {
+		padding: 0;
+		margin:0;
+	}
+	
+		/*	FORM Media Queries*/
+		@media (max-width: 870px){
+			input[type=radio] + label {
+				font-size: 1.8rem;
+			}
+		}
+
+		@media (max-width: 660px) {
+			input[type=radio] {
+				display:none;
+			}
+
+			input[type=radio] + label.derek { 
+				width: 100%;
+			}
+
+			input[type=radio] + label.hansel { 
+				width: 100%;	
+				margin-top: 5px;
+			}
+			input[type=radio] + label.warmUpLeg {
+				width: 100%;	
+				margin-top: 5px;
+			}
+			
+			input[type=radio] + label.warmUpButt {
+				width: 100%;	
+				margin-top: 5px;
+			}
+
+			input[type=radio] + label.warmUpHead {
+				width: 100%;	
+				margin-top: 5px;
+			}
+
+			input[type=radio] + label.ferrari{ 
+				width: 100%;	
+				margin-top: 5px;
+			}
+			
+
+			input[type=radio] + label.leTigre {
+				width: 100%;	
+				margin-top: 5px;
+			}
+
+			input[type=radio] + label.magnum {
+				width: 100%;	
+				margin-top: 5px;
+			}
+
+			input[type=radio] + label.blueSteel {
+				width: 100%;	
+				margin-top: 5px;
+			}
+
+			.finisherLeg, .finisherButt, .finisherHead {
+				width: 100%;	
+				margin-top: 5px;
+			}
+
+			input[type=submit] {
+				width: 100%
+			}
+
+
+	}
+
+	</style>
+</head>
+<body>
+<div class="wrapper"> 
+	<h1>ZOOLANDER</h1>
+	<h2>It's a Walk-Off Game</h2>
+	<form>
+		<h3> Pick a Character</h3>
+			<input type="radio" name="character" class="character derek" value="derek" id="derek" data-character="derek">
+			<label class="derek" for="derek"><p>Derek</p></label>
+					
+			<input type="radio" name="character"  class="character hansel" value="hansel" id="hansel" data-character="hansel">
+			<label class="hansel" for="hansel"><p>Hanzel</p></label>
+
+		<!-- Pick a Warm up Move -->
+		<h3>1. Pick a Warm Up</h3>
+			<input type="radio" name="warmup" value="leg" id="warmUpLeg" data-warmup="leg">
+				<label class="warmUpLeg" for="warmUpLeg"><p>Stanky Leg</p></label>
+
+			<input type="radio" name="warmup" value="head" id="warmUpHead" data-warmup="head">
+				<label class="warmUpHead" for="warmUpHead"><p>The 'ttude</p></label>
+
+			<input type="radio" name="warmup"  value="butt" id="warmUpButt" data-warmup="butt">
+				<label class="warmUpButt" for="warmUpButt"><p>Butt Wiggle</p></label>	
+
+		<!-- Choice 2 Signature Look -->
+			<h3>2. Pick a Signature Look</h3>
+			<input type="radio" name="look" value="ferrari" id="ferrari" data-look="ferrari">
+				<label class="ferrari" for="ferrari"><p>Ferrari</p></label>
+
+			<input type="radio" name="look" value="leTigre" id="leTigre" data-look="leTigre">
+				<label class="leTigre" for="leTigre"><p>Le Tigre</p></label>	
+
+			<input type="radio" name="look" value="magnum" id="magnum" data-look="magnum">
+				<label class="magnum" for="magnum"><p>Magnum</p></label>	
+			
+			<input type="radio" name="look" value="blueSteel" id="blueSteel" data-look="blueSteel">
+				<label class="blueSteel" for="blueSteel"><p>Blue Steel</p></label>	
+
+		<!-- Pick a Finisher Move -->
+		<h3>3. Pick a Finisher</h3>
+			<input type="radio" id="finisherLeg" name="finisher" value="leg"  data-warmup="leg">
+				<label class="finisherLeg " for="finisherLeg"><p>Stanky Leg</p></label>
+
+			<input type="radio" id="finisherHead" name="finisher" value="head"  data-warmup="head">
+				<label class="finisherHead" for="finisherHead"><p>The 'ttude</p></label>
+
+			<input type="radio" id="finisherButt" name="finisher" value="butt"  data-warmup="butt">
+				<label class="finisherButt" for="finisherButt"><p>Butt Wiggle</p></label>	
+
+		<input type="submit" id="submit" value="Ok Boys, Lets Get to Work! >">
+						
+	</form> 				
+</div>	
+	
+</body>
+</html>
